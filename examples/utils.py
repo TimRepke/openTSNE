@@ -329,8 +329,9 @@ def plot(
                     horizontalalignment="center",
                 )
 
-    # Hide ticks and axis
+    # Hide ticks and axis and make axes equal
     ax.set_xticks([]), ax.set_yticks([]), ax.axis("off")
+    ax.set_aspect("equal", adjustable="box")
 
     if draw_legend:
         legend_handles = [
